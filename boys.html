@@ -1,27 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>
-            HOSTEL PHOTOS
-        </title>
-    </head>
-    <body>
-        <div class="vellingiri">
-            <h4>vellingiri</h4>
-            <img src="./images/vellingiri.jpeg" alt="velingiri"/>
-        </div>
-        <div class="thirumalai">
-            <h4>Thirumalai</h4>
-            <img src="./images/thirumalai.jpeg" alt="thirumalai"/>
-        </div>
-        <div class="palani">
-            <h4>Palani</h4>
-            <img src="./images/palani.jpeg" alt="Palani"/>
-        </div>
-        <div class="maruthamalai">
-            <h4>Maruthamalai</h4>
-            <img src="./images/mRUTHAMALAI.jpeg" alt="maruthamalai"/>
-        </div>
-        
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .swiper-container {
+      width: 100%;
+      height: 100vh;
+    }
+
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 2em;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide" style="background-image: url('images/mRUTHAMALAI.jpeg');">
+        <p>maruthamalai</p>
+      </div>
+      <div class="swiper-slide" style="background-image: url('images/vellingiri.jpeg');">
+        <p>vellingiri</p>
+      </div>
+      <div class="swiper-slide" style="background-image: url('images/palani.jpeg');">
+        <p>palani</p>
+      </div>
+      <div class="swiper-slide" style="background-image: url('images/thirumalai.jpeg');">
+        <p text-red-500>thirumalai</p>
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Navigation -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+
+</body>
+</html>
