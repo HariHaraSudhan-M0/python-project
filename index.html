@@ -3,114 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <title>CIT HOSTEL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
   <body>
-    <div class="heading">
-      <center>
-        <h1>HOSTEL ROOM ALLOCATION</h1>
-      </center>
-    </div>
-    <div class="buttons">
-      <button>HOME</button>
-      <button>ALLOTMENT</button>
-      <button>CONTACT</button>
-    </div>
-    <div class="text1">
-      <br />Hosteller <br />amazing hostels for <br />the free spirited student
-    </div>
-    <div class="image1"></div>
-    <div class="hostel_image">
-      <img src="images/1.jpeg" alt="hostel room image" />
-    </div>
-    <div class="text2">
-      <h2>Hostel Rooms</h2>
-    </div>
+    <nav
+      class="sticky top-0 z-10 block w-full max-w-full px-4 py-2 text-white bg-slate-400 border rounded-none shadow-md h-max border-white/80 bg-opacity-80 backdrop-blur-2xl backdrop-saturate-200 lg:px-8 lg:py-4"
+    >
+      <div class="flex items-center justify-between text-blue-gray-900">
+        <a
+          href="#"
+          class="mr-4 block cursor-pointer py-1.5 font-sans text-base font-medium leading-relaxed text-inherit antialiased"
+        >
+          Hostel Allotment
+        </a>
+        <div class="flex items-center gap-4">
+          <div class="hidden mr-4 lg:block">
+            <ul
+              class="flex flex-col gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6"
+            >
+            <li
+            class="block p-1 font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900"
+          >
+            <a href="#" class="flex items-center"> Home </a>
+          </li>
+              <li
+                class="block p-1 font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900"
+              >
+                <a href="#" class="flex items-center"> Contact </a>
+              </li>
+              <li
+                class="block p-1 font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900"
+              >
+                <a href="#" class="flex items-center"> Allotment </a>
+              </li>
 
-    <div class="rooms_image">
-      <div class="single room">
-        <img
-          src="images/WhatsApp Image 2023-11-29 at 10.03.34-5.jpeg"
-          alt="single room"
-        />
-        <br />1- Bed with study table. <br />Common restroom. <br />Beds
-        provided.
-      </div>
-      <br />
-      <br />
-      <div class="double room">
-        <img
-          src="images/WhatsApp Image 2023-11-29 at 10.03.33.jpeg"
-          alt="double room"
-        />
-        <br />
-        2 -Bed with 2 study table. <br />
-        Common restroom. <br />
-        Beds provided.
-      </div>
-    </div>
-    <br />
-    <br />
-    <br />
-
-    <div class="text3">
-      <h3>we have everything you need</h3>
-      <div class="content">
-        Free available high speed WiFi
-        <img src="" alt="wifi" />
-        <br />Purified RO water <br />Hot & Cold Water for Drinking & Bathing
-        <br />Common TV Room
-        <img src="" alt="cctv" />
-        <br />24 x 7 Security & CCTV <br />Biometric Attendance & SMS Alert
-        <br />House Keeping Service <br />Laundry Area
-        <img scr="" alt="newspaper" />
-        <br />Newspaper
-      </div>
-      <div>
-        <img src="" alt="studying image" />
-      </div>
-    </div>
-    <br /><br />
-    <div class="text3">
-      <h2>Photos of our hostel</h2>
-      <a href="boys.html">
-        <h3>Boys hostel</h3>
-      </a>
-      <a href="girls.html">
-        <h3>Girls hostel</h3>
-      </a>
-    </div>
-    <br /><br /><br /><br />
-    <div class="contacts">
-      <h2>CONTACTS</h2>
-      <div class="phone text">
-        <h4>phone number📞</h4>
-        <div>
-          7010905731
-          <br />8870449328
+            </ul>
+          </div>
+          <div class="flex items-center gap-x-1">
+            <button
+              class="hidden px-4 py-2 font-sans text-xs font-bold text-center text-gray-900 uppercase align-middle transition-all rounded-lg select-none hover:bg-gray-900/10 active:bg-gray-900/20 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:inline-block"
+              type="button"
+            >
+              <span>Log In</span>
+            </button>
+          </div>
+          <button
+            class="relative ml-auto h-6 max-h-[40px] w-6 max-w-[40px] select-none rounded-lg text-center align-middle font-sans text-xs font-medium uppercase text-inherit transition-all hover:bg-transparent focus:bg-transparent active:bg-transparent disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:hidden"
+            type="button"
+          >
+            <span
+              class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </span>
+          </button>
         </div>
       </div>
-      <div class="email text">
-        <h4>email address 📧</h4>
-        <div class="gmail">
-          cit@gmail.com
-          <br />cithostel@gmail.com
-        </div>
-      </div>
-      <div class="location text">
-        <h4>location 🎈</h4>
-        <div class="address">
-          Coimbatore Institute of Technology (CIT) ,
-          <br />
-          Civil Aerodrome Post Coimbatore, <br />Tamilnadu, India – 641 014
-        </div>
-      </div>
-      <div>
-        <h4>working time 🖥️</h4>
-        09:00 am - 01:00 pm
-        <br />02:00 pm - 05:00 pm <br />Holidays on Weekends
-      </div>
-    </div>
-  </body>
-   
+    </nav> 
 </html>
