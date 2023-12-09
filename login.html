@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Hostel Login</title>
+  <style>
+    body {
+      background-image: url("/Users/hari/Documents/python project/images/login.jpeg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: rgb(8, 0, 0); 
+    }
+
+    ::placeholder {
+      font-size: 14px;
+    }
+
+    #title {
+      margin-bottom: 0; /* Remove default margin-bottom to avoid extra space */
+      color: #ff00007b; /* Set the color of the title */
+    }
+
+    /* Adjust input box size */
+    #rollNo,
+    #password {
+      width: 1050px; 
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="btn btn-primary" href="index.html">Home</a>
+  <div class="mx-auto">
+    <h2 id="title" class="navbar-text text-brown">Hostel Room Application</h2>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <form onsubmit="return redirectToNextPage()">
+    <div class="form-group">
+      <label for="rollNo">Roll No:</label>
+      <input type="text" class="form-control" id="rollNo" placeholder="Enter Roll No">
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" class="form-control" id="password" placeholder="Enter Password">
+    </div>
+    <div class="text-center">
+      <button type="submit" class="btn btn-success">Login</button>
+    </div>
+  </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  function redirectToNextPage() {
+    window.location.href = "details.html";
+    return false; 
+  }
+</script>
+
+</body>
+</html>

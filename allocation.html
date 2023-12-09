@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Allocation Login</title>
+    <style>
+        body {
+            padding-top: 50px;
+        }
+        .logout-btn {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<form onsubmit="return redirectToNextPage()">
+ <div class="form-group">
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <h1 class="mt-5">Hostel and Room</h1>
+            <form>
+                <div class="form-group">
+                    <label for="hostel">Hostel</label>
+                    <input type="text" class="form-control" id="hostel" placeholder="Enter hostel name">
+                </div>
+                <div class="form-group">
+                    <label for="room">Room</label>
+                    <input type="text" class="form-control" id="room" placeholder="Enter room number">
+                </div>
+                <div class="card mt-4">
+                    <div class="card-body">
+                        <p>Vellingiri is a hostel with a peaceful environment. The Vellingiri hills form a major range in the western ghats in the Nilgiri Biosphere Reserve. The seven hills with altitudes ranging from 520 m-1840 m are bordered.</p>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-lg btn-block logout-btn mt-4">Logout</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    function redirectToNextPage() {
+      window.location.href = "login.html";
+      return false; 
+    }
+</script>
+  
+</body>
+</html>

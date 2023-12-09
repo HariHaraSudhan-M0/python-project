@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Details login</title>
+</head>
+<body>
+
+
+  <div class="mx-auto">
+    <h2 class="navbar-text text-center text-green">Student Details</h2>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  
+  <form onsubmit="return redirectToNextPage()">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter Name">
+    </div>
+    <div class="form-group">
+      <label for="rollNo">Roll No:</label>
+      <input type="text" class="form-control" id="rollNo" placeholder="Enter Roll No">
+    </div>
+    <div class="form-group">
+      <label for="year">Year:</label>
+      <input type="text" class="form-control" id="year" placeholder="Enter Year">
+    </div>
+    <div class="form-group">
+      <label for="department">Department:</label>
+      <input type="text" class="form-control" id="department" placeholder="Enter Department">
+    </div>
+    <div class="form-group">
+      <label for="mail">Mail ID:</label>
+      <input type="email" class="form-control" id="mail" placeholder="Enter Email">
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone:</label>
+      <input type="tel" class="form-control" id="phone" placeholder="Enter Phone">
+    </div>
+    <div class="text-center">
+      <button type="submit" class="btn btn-success">Hostel</button>
+    </div>
+  </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  function redirectToNextPage() {
+    window.location.href = "allocation.html";
+    return false; 
+  }
+</script>
+
+</body>
+</html>
